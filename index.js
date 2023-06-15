@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 const client = new Discord.Client({
   partials: ["MESSAGE", "CHANNEL", "REACTION"],
 });
-const queue = new Map();
+
 const prefix = "!";
 const memberCounter = require(`./counters/members`);
 
@@ -19,7 +19,7 @@ for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
   client.commands.set(command.name, command);
 }
-client.mutes = require("./roles.json");
+
 
 client.once("ready", () => {
   console.log("Reg is now online..");
@@ -37,6 +37,7 @@ client.on("guildMemberAdd", (guildMember) => {
 });
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
+
 
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
@@ -67,6 +68,8 @@ client.on("message", (message) => {
     client.commands.get("skip").execute(message, args);
   } else if (command === "gif") {
     client.commands.get("gif").execute(message, args);
+  } else  if (message.content === "!test") {
+    message.channel.send("Bot is working!");
   }
 });
 
