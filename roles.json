@@ -1,0 +1,56 @@
+{
+    "<@790853872099917844>": [
+        {
+            "guild": "259552722242633728",
+            "id": "360211881228763138",
+            "name": "Alright People",
+            "color": 3066993,
+            "hoist": true,
+            "rawPosition": 3,
+            "permissions": 1849155265,
+            "managed": false,
+            "mentionable": true,
+            "deleted": false,
+            "createdTimestamp": 1505951604898
+        },
+        {
+            "guild": "259552722242633728",
+            "id": "791823123225247785",
+            "name": "PVP",
+            "color": 1752220,
+            "hoist": true,
+            "rawPosition": 2,
+            "permissions": 1849155265,
+            "managed": false,
+            "mentionable": true,
+            "deleted": false,
+            "createdTimestamp": 1608855743939
+        },
+        {
+            "guild": "259552722242633728",
+            "id": "791823449654951936",
+            "name": "PVE",
+            "color": 11342935,
+            "hoist": true,
+            "rawPosition": 1,
+            "permissions": 1849155281,
+            "managed": false,
+            "mentionable": true,
+            "deleted": false,
+            "createdTimestamp": 1608855821766
+        },
+        {
+            "guild": "259552722242633728",
+            "id": "259552722242633728",
+            "name": "@everyone",
+            "color": 0,
+            "hoist": false,
+            "rawPosition": 0,
+            "permissions": 1024,
+            "managed": false,
+            "mentionable": false,
+            "deleted": false,
+            "createdTimestamp": 1481952591239
+        }
+    ]
+}
