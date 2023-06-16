@@ -35,7 +35,7 @@ client.on("guildMemberAdd", (guildMember) => {
     .get("791589058747826207")
     .send(`𝑊𝑒𝑙𝑐𝑜𝑚𝑒 <@${guildMember.user.id}> 𝑡𝑜 𝑜𝑢𝑟 𝑠𝑒𝑟𝑣𝑒𝑟!`);
 });
-client.on("message", (message) => {
+client.on("message", message => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 
